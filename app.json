@@ -18,5 +18,11 @@
   ],
   "env": {
     "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-nodejs"
+  },
+  "addons": ["heroku-postgresql:standard-0", "heroku-redis:premium-0"],
+  "environments": {
+    "review": {
+      "addons": ["heroku-postgresql:hobby-dev", "heroku-redis:hobby-dev"]
+    }
   }
 }
