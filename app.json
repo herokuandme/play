@@ -15,6 +15,7 @@
   "scripts": {
   },
   "addons": [
+    "addons": ["heroku-postgresql:hobby-dev", "heroku-redis:hobby-dev"]
   ],
   "env": {
     "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-nodejs"
